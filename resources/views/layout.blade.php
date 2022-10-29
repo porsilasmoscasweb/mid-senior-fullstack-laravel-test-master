@@ -14,7 +14,8 @@
             <h1>utopigGames</h1>
         </div>
 
-        @yield('content')
+        {{-- @yield('content') --}}
+        <div id="app"></div>
 
         <script src="{{ mix('js/app.js') }}"></script>
 

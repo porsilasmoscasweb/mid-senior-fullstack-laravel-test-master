@@ -12,9 +12,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $this->call(
-            // GamesSeeder::class,
-            NewGamesSeeder::class
-        );
+        $this->call(GamesSeeder::class);
+        $this->call(NewGamesSeeder::class);
     }
 }

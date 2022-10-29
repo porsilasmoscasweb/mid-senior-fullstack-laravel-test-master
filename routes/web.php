@@ -14,3 +14,7 @@
 Route::get('/', 'GameController@index')->name('game.index');
 Route::get('/show/{id}', 'GameController@show')->name('game.show');
 Route::get('/destroy/{id}', 'GameController@destroy')->name('game.destroy');
+
+Route::get('{any}', function () {
+    return view('layout');
+})->where('any', '.*');

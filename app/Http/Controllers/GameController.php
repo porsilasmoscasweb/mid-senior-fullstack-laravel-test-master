@@ -16,7 +16,8 @@ class GameController extends Controller
     {
         $games = Game::all();
 
-        return view('game-list', compact('games'));
+        return response()->json($games);
+        // return view('game-list', compact('games'));
 
     }
 
